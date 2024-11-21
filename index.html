@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro para Biblioteca</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Diseño.css">
+</head>
+<body>
+    <h1>Registro para Biblioteca</h1>
+    <form action="registro.php" method="POST">
+        <label>Nombre(s):</label>
+        <input type="text" name="nombre" placeholder="Nombre(s)" required><br><br>
+
+        <label>Apellidos:</label>
+        <input type="text" name="apellidos" placeholder="Apellidos" required><br><br>
+
+        <label>Semestre:</label>
+        <select name="semestre" required>
+            <option value="">Seleccione el Semestre</option>
+            <option value="Primero">Primero 1°</option>
+            <option value="Segundo">Segundo 2°</option>
+            <option value="Tercero">Tercero 3°</option>
+            <option value="Cuarto">Cuarto 4°</option>
+            <option value="Quinto">Quinto 5°</option>
+            <option value="Sexto">Sexto 6°</option>
+        </select><br><br>
+
+        <label>Hora de Entrada:</label>
+        <input type="time" name="entrada" required><br><br>
+
+        <label>Motivo de Ingreso:</label>
+        <select name="motivo" required>
+            <option value="">Seleccione el motivo</option>
+            <option value="Computadora">Ocupo una computadora</option>
+            <option value="Leer">Leer/Tomar un libro</option>
+            <option value="Trabajo">Lugar para trabajar</option>
+        </select><br><br>
+
+        <label>Turno:</label><br>
+        <input type="radio" name="turno" value="matutino" required> Matutino
+        <input type="radio" name="turno" value="vespertino"> Vespertino<br><br>
+
+        <label>Hora de Salida:</label>
+        <input type="time" name="salida" required><br><br>
+
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+</html>

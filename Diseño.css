@@ -1,0 +1,68 @@
+*{
+	padding: 5px;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: Arial;
+	background-image:url('biblioteca.jpg') ;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.9;
+}
+form{
+	background-color: #afa5a5;
+	padding: 50px;
+	margin: 25px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 500px;
+	position: absolute;
+	top: 53%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+h1{
+	background-color: #ffffff;
+	opacity: 0.6;
+	text-align: center;
+}
+
+/* Estilo base para el título */
+.titulo {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  display: inline-block;
+}
+
+/* Estilo para las letras del título */
+.titulo span {
+  display: inline-block;
+  opacity: 0;  /* Comienzan invisibles */
+  transform: translateY(-30px);  /* Comienzan por encima de su posición */
+  animation: acomodarLetra 1s forwards;  /* Animación para cada letra */
+  animation-delay: calc(0.1s * var(--i));  /* Retraso para cada letra */
+}
+
+/* Definir la animación de acomodar las letras */
+@keyframes acomodarLetra {
+  0% {
+    opacity: 0;  /* Comienzan invisibles */
+    transform: translateY(-30px);  /* Comienzan desplazadas hacia arriba */
+  }
+  100% {
+    opacity: 3;  /* Se hacen visibles */
+    transform: translateY(0);  /* Se mueven a su posición original */
+  }
+}
+
+ 
+}
+
+
+formulario{
+
+}
